@@ -44,7 +44,10 @@ jar {
         attributes "Implementation-Title": "File Line Comparator",
                 "Implementation-Version": version,
                 "Implementation-Vendor": "Firebird CSS",
-                "Build-Date": (new Date()).format("MM-dd-yyyy HH:mm:ss")
+                "Build-Date": (new Date()).format("MM-dd-yyyy HH:mm:ss"),
+                "Main-Class": "com.firebirdcss.tools.file_line_comparator.ApplicationMain"
     }
+    
+    archiveName 'file-line-comparator.jar'
 }
 

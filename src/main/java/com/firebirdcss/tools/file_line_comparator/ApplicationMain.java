@@ -99,6 +99,7 @@ public class ApplicationMain {
 				case "-h":
 				case "--help":
 					displayUsage();
+					System.exit(0);
 					break;
 				default:
 					if (file1 == null) {
