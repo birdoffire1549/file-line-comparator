@@ -71,11 +71,19 @@ public class ApplicationMain {
 			System.out.println("The two files are the same.");
 		} else {
 			if (lines1.size() > 0) {
-				System.out.println("File #1 contains '" + lines1.size() + "' lines that were not in file #2.");
+				System.out.println("File #1 contains '" + lines1.size() + "' line(s) that were not in file #2.\nThey are as follows:");
+				for (String line : lines1) {
+					System.out.println("\tLINE: " + line);
+				}
+				System.out.println();
 			}
 			
 			if (lines2.size() > 0) {
-				System.out.println("File #2 contains '" + lines2.size() + "' lines that were not in file #1.");
+				System.out.println("File #2 contains '" + lines2.size() + "' line(s) that were not in file #1.\nThey are as follows:");
+				for (String line : lines2) {
+					System.out.println("\tLINE: " + line);
+				}
+				System.out.println();
 			}
 		}
 	}
